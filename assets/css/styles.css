@@ -111,7 +111,7 @@ nav a:hover {
 
 /* Secciones del blog */
 section {
-    margin: 40px 0;
+    margin: 10px 0; /* Reducir el margen superior e inferior */
     padding: 20px;
     background-color: #1f1f1f; /* Fondo oscuro para las secciones */
     border-radius: 8px;
@@ -162,10 +162,12 @@ article p {
 }
 
 .multimedia img {
-    max-width: 45%; /* Ajusta el tamaño de las imágenes */
+    max-width: 100%; /* Ajustar el tamaño de las imágenes al 100% del contenedor */
+    width: 300px; /* Tamaño fijo para las imágenes */
+    height: auto; /* Mantener la proporción de las imágenes */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 10px; /* Espacio entre las imágenes */
+    margin: 10px; /* Reducir el margen entre las imágenes */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
 }
 
