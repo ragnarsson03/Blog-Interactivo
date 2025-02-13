@@ -7,6 +7,9 @@ body {
     padding: 0;
     line-height: 1.6;
     text-align: center; /* Centrar el texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Estilos para la landing page */
@@ -16,6 +19,7 @@ header {
     padding: 50px 0;
     margin-bottom: 20px;
     background-color: #1f1f1f; /* Fondo oscuro para el header */
+    width: 100%;
 }
 
 header h1 {
@@ -35,6 +39,7 @@ nav {
     padding: 15px 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
 nav a {
@@ -56,6 +61,9 @@ nav a:hover {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Secciones del blog */
@@ -65,6 +73,7 @@ section {
     background-color: #1f1f1f; /* Fondo oscuro para las secciones */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
 section h2 {
@@ -133,6 +142,7 @@ article p {
     padding: 20px;
     border-radius: 8px;
     text-align: center;
+    width: 100%;
 }
 
 #subscribeForm {
@@ -171,6 +181,7 @@ footer {
     margin-top: 40px;
     border-top: 4px solid #3498db;
     font-size: 0.9rem;
+    width: 100%;
 }
 
 footer a {
@@ -249,4 +260,12 @@ footer a:hover {
 
 .cta-button:hover {
     background-color: #2980b9;
+}
+
+#three-container {
+    width: 300px; /* Ajusta el tamaño del contenedor */
+    height: 500px; /* Ajusta la altura según tus necesidades */
+    margin: 20px; /* Espacio alrededor del contenedor */
+    display: block;
+    float: left; /* Mueve el contenedor a la izquierda */
 }
