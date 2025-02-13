@@ -9,25 +9,33 @@ function init() {
     camera.position.z = 5;
 
     // Renderizador
-    const renderer = new THREE.WebGLRenderer({ alpha: true }); // Hacer el fondo transparente
+    const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true }); // Hacer el fondo transparente y suavizar los bordes
     renderer.setSize(container.clientWidth, container.clientHeight);
     container.appendChild(renderer.domElement);
 
+    // Luces
+    const ambientLight = new THREE.AmbientLight(0x404040); // Luz ambiental suave
+    scene.add(ambientLight);
+
+    const pointLight = new THREE.PointLight(0xffffff, 1, 100);
+    pointLight.position.set(10, 10, 10);
+    scene.add(pointLight);
+
     // Geometría y material
     const geometry = new THREE.BoxGeometry();
-    const material = new THREE.MeshBasicMaterial({ color: 0x3498db });
+    const material = new THREE.MeshStandardMaterial({ color: 0x3498db, metalness: 0.5, roughness: 0.5 });
     const cube = new THREE.Mesh(geometry, material);
     scene.add(cube);
 
     // Añadir más geometrías
     const sphereGeometry = new THREE.SphereGeometry(0.5, 32, 32);
-    const sphereMaterial = new THREE.MeshBasicMaterial({ color: 0xff5733 });
+    const sphereMaterial = new THREE.MeshStandardMaterial({ color: 0xff5733, metalness: 0.5, roughness: 0.5 });
     const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
     sphere.position.set(2, 0, 0);
     scene.add(sphere);
 
     const coneGeometry = new THREE.ConeGeometry(0.5, 1, 32);
-    const coneMaterial = new THREE.MeshBasicMaterial({ color: 0x33ff57 });
+    const coneMaterial = new THREE.MeshStandardMaterial({ color: 0x33ff57, metalness: 0.5, roughness: 0.5 });
     const cone = new THREE.Mesh(coneGeometry, coneMaterial);
     cone.position.set(-2, 0, 0);
     scene.add(cone);
