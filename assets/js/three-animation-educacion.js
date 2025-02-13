@@ -1,5 +1,5 @@
-function init() {
-    const container = document.getElementById('three-container');
+function initEducacion() {
+    const container = document.getElementById('three-container-educacion');
 
     // Escena
     const scene = new THREE.Scene();
@@ -14,36 +14,17 @@ function init() {
     container.appendChild(renderer.domElement);
 
     // Geometría y material
-    const geometry = new THREE.BoxGeometry();
+    const geometry = new THREE.TorusGeometry(1, 0.4, 16, 100);
     const material = new THREE.MeshBasicMaterial({ color: 0x3498db });
-    const cube = new THREE.Mesh(geometry, material);
-    scene.add(cube);
-
-    // Añadir más geometrías
-    const sphereGeometry = new THREE.SphereGeometry(0.5, 32, 32);
-    const sphereMaterial = new THREE.MeshBasicMaterial({ color: 0xff5733 });
-    const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
-    sphere.position.set(2, 0, 0);
-    scene.add(sphere);
-
-    const coneGeometry = new THREE.ConeGeometry(0.5, 1, 32);
-    const coneMaterial = new THREE.MeshBasicMaterial({ color: 0x33ff57 });
-    const cone = new THREE.Mesh(coneGeometry, coneMaterial);
-    cone.position.set(-2, 0, 0);
-    scene.add(cone);
+    const torus = new THREE.Mesh(geometry, material);
+    scene.add(torus);
 
     // Animación
     function animate() {
         requestAnimationFrame(animate);
 
-        cube.rotation.x += 0.01;
-        cube.rotation.y += 0.01;
-
-        sphere.rotation.x += 0.01;
-        sphere.rotation.y += 0.01;
-
-        cone.rotation.x += 0.01;
-        cone.rotation.y += 0.01;
+        torus.rotation.x += 0.01;
+        torus.rotation.y += 0.01;
 
         renderer.render(scene, camera);
     }
@@ -58,4 +39,4 @@ function init() {
     });
 }
 
-init();
+initEducacion();
