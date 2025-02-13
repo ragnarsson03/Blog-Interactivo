@@ -3,146 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blog interactivo sobre el impacto de la inteligencia artificial en Venezuela. Explora cómo la IA está transformando la salud, educación, economía y seguridad.">
-    <meta name="keywords" content="inteligencia artificial, IA, Venezuela, salud, educación, economía, seguridad">
-    <meta name="author" content="Frederick Durán, Arturo Natera, Susan Molina, Padilla Sánchez, Johan">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/robot.css">
-    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
-    <title>Blog Interactivo: IA en Venezuela</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <title>Pantalla de Carga</title>
+    <link rel="stylesheet" href="assets/css/loading.css">
+    <script>
+        // Redirigir a main.html después de 3 segundos
+        setTimeout(function() {
+            window.location.href = "main.html";
+        }, 3000);
+    </script>
 </head>
 <body>
-    <header>
-        <div id="three-container-salud"></div>
-        <h1>Blog Interactivo: Inteligencia Artificial en Venezuela</h1>
-        <p>Explorando el impacto de la IA en salud, educación, economía y seguridad</p>
-        <div class="robot-container">
-            <div class="loader">
-                <div class="modelViewPort">
-                    <div class="eva">
-                        <div class="head">
-                            <div class="eyeChamber">
-                                <div class="eye"></div>
-                                <div class="eye"></div>
-                            </div>
-                        </div>
-                        <div class="body">
-                            <div class="hand"></div>
-                            <div class="hand"></div>
-                            <div class="scannerThing"></div>
-                            <div class="scannerOrigin"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <nav>
-        <a href="#salud">Salud</a>
-        <a href="#educacion">Educación</a>
-        <a href="#economia">Economía</a>
-        <a href="#seguridad">Seguridad</a>
-        <a href="#equipo">Equipo</a>
-        <a href="robot.html">Robot</a> <!-- Nuevo enlace al archivo robot.html -->
-    </nav>
-
-    <div class="container">
-        <section id="salud">
-            <h2>Salud</h2>
-            <article>
-                <h3>El impacto de la IA en el sector salud en Venezuela</h3>
-                <p>El impacto de la Inteligencia Artificial (IA) en el sector salud en Venezuela es un tema muy complejo y con diversas perspectivas. En la actualidad, la IA para la salud en Venezuela no está implementada, aunque existen muchas iniciativas para dar el paso hacia la transformación digital. Para ello, se requiere una gran inversión en proyectos de investigación e infraestructura tecnológica que cuente con los recursos financieros necesarios, lo cual es un desafío en un país con dificultades económicas y limitaciones en el sector salud.</p>
-                <p>En el tema del adelanto tecnológico en el sector salud en Venezuela, luego de la pandemia, progresó con apoyo de la IA la telemedicina, lo que mejora el acceso a la atención médica en áreas remotas o de difícil acceso. Los pacientes pueden recibir consultas y seguimiento médico a distancia.</p>
-                <p>En tema de desarrollo tecnológico, en los últimos años ha aumentado el apoyo a la robótica en Venezuela a nivel estudiantil como ciencia que se enfoca en diseñar máquinas programadas para realizar tareas de forma automática. Esta iniciativa puede expandirse a implementar la IA en el sector salud para mejorar el diagnóstico, el tratamiento y la investigación médica, capacitando a los profesionales de la salud para garantizar el uso responsable y equitativo de esta tecnología. Representa grandes oportunidades para mejorar la calidad de la atención médica, optimizar recursos y facilitar el acceso a la salud en un país con desafíos en el sector.</p>
-                <div class="multimedia">
-                    <img src="assets/img/salud.jpg" alt="IA en salud">
-                </div>
-            </article>
-        </section>
-
-        <section id="educacion">
-            <h2>Educación</h2>
-            <div id="three-container-educacion"></div>
-            <article>
-                <h3>Plataformas de aprendizaje adaptativo</h3>
-                <p>La IA está transformando la educación a través de plataformas personalizadas que se adaptan a las necesidades individuales de los estudiantes. Estas plataformas utilizan algoritmos de aprendizaje automático para analizar el rendimiento de los estudiantes y ajustar el contenido y el ritmo de aprendizaje en consecuencia.</p>
-                <p>En Venezuela, la implementación de estas tecnologías puede ayudar a superar las barreras educativas, proporcionando acceso a recursos de alta calidad y permitiendo a los estudiantes aprender a su propio ritmo, independientemente de su ubicación geográfica.</p>
-                <div class="multimedia">
-                    <img src="assets/img/educacion.jpg" alt="IA en educación">
-                </div>
-            </article>
-        </section>
-
-        <section id="economia">
-            <h2>Economía</h2>
-            <div id="three-container-economia"></div>
-            <article>
-                <h3>Automatización y fintech</h3>
-                <p>La IA está impulsando la automatización y las fintech en Venezuela, mejorando la eficiencia operativa y proporcionando servicios financieros innovadores. Las empresas están utilizando la IA para automatizar procesos repetitivos, reducir costos y mejorar la precisión en la toma de decisiones.</p>
-                <p>Las fintech están utilizando la IA para ofrecer servicios financieros personalizados, como préstamos, inversiones y seguros, basados en el análisis de datos en tiempo real. Esto está permitiendo a más personas acceder a servicios financieros que antes eran inaccesibles.</p>
-                <div class="multimedia">
-                    <img src="assets/img/economia.jpg" alt="IA en economía">
-                </div>
-            </article>
-        </section>
-
-        <section id="seguridad">
-            <h2>Seguridad</h2>
-            <div id="three-container-seguridad"></div>
-            <article>
-                <h3>Ciberseguridad y vigilancia</h3>
-                <p>La IA está mejorando la ciberseguridad y la vigilancia en Venezuela, permitiendo la detección y respuesta rápida a amenazas. Los sistemas de IA pueden analizar grandes volúmenes de datos en tiempo real para identificar patrones sospechosos y alertar a los equipos de seguridad.</p>
-                <p>Además, la IA se está utilizando en sistemas de vigilancia para mejorar la seguridad pública, permitiendo la identificación y seguimiento de actividades sospechosas en tiempo real.</p>
-                <div class="multimedia">
-                    <img src="assets/img/seguridad.jpg" alt="IA en seguridad">
-                </div>
-                <div class="infografia">
-                    <img src="assets/img/impacto.jpg" alt="Impacto de la IA en la Seguridad de Venezuela">
-                </div>
-            </article>
-        </section>
-
-        <section id="equipo">
-            <h2>Equipo</h2>
-            <article>
-                <h3>Conoce a nuestro equipo</h3>
-                <p>El proyecto está siendo desarrollado por un equipo de 5 estudiantes:</p>
-                <ul>
-                    <li><strong>Frederick Durán</strong></li>
-                    <li><strong>Arturo Natera</strong></li>
-                    <li><strong>Susan Molina</strong></li>
-                    <li><strong>Padilla Sánchez</strong></li>
-                    <li><strong>Johan González</strong></li>
-                </ul>
-                <div class="multimedia">
-                    <img src="assets/img/equipo.jpg" alt="Equipo">
-                </div>
-            </article>
-        </section>
-
-        <section id="suscripcion">
-            <h2>Suscríbete para más contenido</h2>
-            <form id="subscribeForm">
-                <input type="email" id="email" placeholder="Ingresa tu correo electrónico" required>
-                <button type="submit">Suscribirse</button>
-            </form>
-        </section>
+    <div class="newtons-cradle">
+        <div class="newtons-cradle__dot"></div>
+        <div class="newtons-cradle__dot"></div>
+        <div class="newtons-cradle__dot"></div>
+        <div class="newtons-cradle__dot"></div>
     </div>
-
-    <footer>
-        <p>&copy; 2025 Blog Interactivo. Todos los derechos reservados.</p>
-        <div class="social-links">
-        </div>
-    </footer>
-
-    <button id="scrollToTop" title="Volver al inicio">↑</button>
-
-    <script src="assets/js/scripts.js"></script>
-    <script src="assets/js/three-animation.js"></script>
-    <script src="assets/js/three-animation-educacion.js"></script>
-    <script src="assets/js/three-animation-economia.js"></script>
-    <script src="assets/js/three-animation-seguridad.js"></script>
 </body>
 </html>
