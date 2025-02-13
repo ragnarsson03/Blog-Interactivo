@@ -22,6 +22,10 @@ header {
     background-color: #1f1f1f; /* Fondo oscuro para el header */
     width: 100%;
     overflow: hidden; /* Asegura que el contenido no se desborde */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra el contenido verticalmente */
 }
 
 header h1 {
@@ -47,6 +51,20 @@ header p {
     width: 100%;
     height: 100%;
     z-index: 0; /* Asegura que el cubo esté detrás del texto */
+}
+
+.robot-container {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 15rem; /* Ajusta el tamaño del robot */
+    height: 15rem; /* Ajusta el tamaño del robot */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0; /* Asegura que el robot esté detrás del texto */
+    transform: translateY(-50%); /* Centra verticalmente el robot */
+    background: none; /* Elimina el fondo negro */
 }
 
 /* Navegación */
@@ -256,8 +274,17 @@ footer a:hover {
 
 /* Responsividad */
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
     header h1 {
         font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
     }
 
     nav a {
@@ -280,6 +307,16 @@ footer a:hover {
 
     #subscribeForm input {
         width: 100%;
+    }
+
+    .robot-container {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        width: 8rem; /* Ajusta el tamaño del robot */
+        height: 8rem; /* Ajusta el tamaño del robot */
+        transform: translateY(-50%); /* Centra verticalmente el robot */
+        background: none; /* Elimina el fondo negro */
     }
 }
 
