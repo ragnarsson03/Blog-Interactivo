@@ -152,6 +152,27 @@ article p {
     border-radius: 8px;
 }
 
+/* Infografías */
+.infografia {
+    margin: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.infografia img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.infografia img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 /* Formulario de suscripción */
 #suscripcion {
     background-color: #2c3e50; /* Fondo oscuro para el formulario */
@@ -284,4 +305,13 @@ footer a:hover {
     margin: 20px; /* Espacio alrededor del contenedor */
     display: block;
     float: left; /* Mueve el contenedor a la izquierda */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
