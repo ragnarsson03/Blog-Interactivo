@@ -14,23 +14,39 @@ body {
 
 /* Estilos para la landing page */
 header {
+    position: relative;
     color: #ffffff;
     text-align: center;
     padding: 50px 0;
     margin-bottom: 20px;
     background-color: #1f1f1f; /* Fondo oscuro para el header */
     width: 100%;
+    overflow: hidden; /* Asegura que el contenido no se desborde */
 }
 
 header h1 {
     font-size: 3.5rem;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative; /* Asegura que el texto esté por encima del cubo */
+    z-index: 1;
 }
 
 header p {
     font-size: 1.5rem;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    position: relative; /* Asegura que el texto esté por encima del cubo */
+    z-index: 1;
+}
+
+/* Contenedor del cubo */
+#three-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Asegura que el cubo esté detrás del texto */
 }
 
 /* Navegación */
