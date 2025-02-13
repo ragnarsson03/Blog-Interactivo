@@ -2,7 +2,7 @@
 .modelViewPort {
   /* The black circle background around the model */
   perspective: 1000px;
-  width: 20rem;
+  width: 10rem; /* Ajusta el tamaño del contenedor */
   aspect-ratio: 1;
   border-radius: 50%;
   display: flex;
@@ -167,4 +167,50 @@
   100% {
     opacity: 0;
   }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .modelViewPort {
+        width: 6rem; /* Ajusta el tamaño del contenedor */
+    }
+
+    .eva {
+        --EVA-ROTATION-DURATION: 3s; /* Ajusta la duración de la animación */
+    }
+
+    .head {
+        width: 3rem; /* Ajusta el tamaño de la cabeza */
+        height: 2rem; /* Ajusta el tamaño de la cabeza */
+    }
+
+    .eyeChamber {
+        width: 2.25rem; /* Ajusta el tamaño de la cámara de los ojos */
+        height: 1.375rem; /* Ajusta el tamaño de la cámara de los ojos */
+    }
+
+    .eye {
+        width: 0.6rem; /* Ajusta el tamaño de los ojos */
+        height: 0.75rem; /* Ajusta el tamaño de los ojos */
+    }
+
+    .body {
+        width: 3rem; /* Ajusta el tamaño del cuerpo */
+        height: 4rem; /* Ajusta el tamaño del cuerpo */
+    }
+
+    .hand {
+        width: 1rem; /* Ajusta el tamaño de las manos */
+        height: 2.75rem; /* Ajusta el tamaño de las manos */
+    }
+
+    .scannerThing {
+        border-top: 90px solid #9bdaeb; /* Ajusta el tamaño del escáner */
+        border-left: 125px solid transparent; /* Ajusta el tamaño del escáner */
+        border-right: 125px solid transparent; /* Ajusta el tamaño del escáner */
+    }
+
+    .scannerOrigin {
+        width: 4px; /* Ajusta el tamaño del origen del escáner */
+    }
 }
