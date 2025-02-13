@@ -13,7 +13,7 @@ El proyecto está siendo desarrollado por un equipo de 5 estudiantes:
 - **Arturo Natera**
 - **Susan Molina**
 - **Padilla Sánchez**
-- **Johan** (Falta Apellido)
+- **Johan González** 
 
 ---
 
