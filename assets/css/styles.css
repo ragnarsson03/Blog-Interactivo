@@ -392,6 +392,12 @@ footer a:hover {
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
+    
+}
+
+.equipo-container a:visited{
+    color: white;
+    
 }
 
 .miembro-equipo {
