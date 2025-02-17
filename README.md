@@ -12,7 +12,7 @@ El proyecto está siendo desarrollado por un equipo de 5 estudiantes:
 - **Frederick Durán**
 - **Arturo Natera**
 - **Susan Molina**
-- **Padilla Sánchez**
+- **Maria Antonieta Padilla**
 - **Johan González** 
 
 ---
