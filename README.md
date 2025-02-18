@@ -4,16 +4,16 @@
 Este proyecto consiste en la creación de un **blog interactivo** que explora el impacto de la **Inteligencia Artificial (IA)** en sectores clave de Venezuela, como la salud, la educación, la economía y la seguridad. El blog será desarrollado en una plataforma gratuita (WordPress, Blogger o Notion) y contendrá artículos, infografías y videos explicativos que faciliten la comprensión del tema.
 
 El objetivo es ofrecer una visión clara y actualizada de cómo la IA está transformando estos sectores en el contexto venezolano, destacando tanto sus beneficios como sus desafíos.
-
+ 
 ---
 
 ## Autores
-El proyecto está siendo desarrollado por un equipo de 5 estudiantes:
-- **Frederick Durán**
-- **Arturo Natera**
-- **Susan Molina**
-- **Maria Antonieta Padilla**
-- **Johan González** 
+El proyecto fué desarrollado por un equipo de 5 estudiantes:
+- **V30346056 Frederick Durán**
+- **V16251597Arturo Natera**
+- **V12072593Susan Molina**
+- **V11791224 Maria Antonieta Padilla**
+- **V17705832Johan González** 
 
 ---
 
