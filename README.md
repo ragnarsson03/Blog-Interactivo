@@ -10,10 +10,10 @@ El objetivo es ofrecer una visión clara y actualizada de cómo la IA está tran
 ## Autores
 El proyecto fué desarrollado por un equipo de 5 estudiantes:
 - **V30346056 Frederick Durán**
-- **V16251597Arturo Natera**
-- **V12072593Susan Molina**
+- **V16251597 Arturo Natera**
+- **V12072593 Susan Molina** 
 - **V11791224 Maria Antonieta Padilla**
-- **V17705832Johan González** 
+- **V17705832 Johan González** 
 
 ---
 
